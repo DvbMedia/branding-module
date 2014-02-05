@@ -38,6 +38,7 @@ class RcModel:
 	RCTYPE_VU2 = 32
 	RCTYPE_VU3 = 33
 	RCTYPE_XP1000 = 34
+	RCTYPE_SPARK = 35
 
 
 	def __init__(self):
@@ -157,6 +158,8 @@ class RcModel:
 				self.currentRcType = self.RCTYPE_VU3
 			else:
 				self.currentRcType = self.RCTYPE_VU
+		elif getBoxType() == 'spark' or getBoxType() == 'spark7162':
+				self.currentRcType = self.RCTYPE_SPARK
 		
 	def getRcLocation(self):
 		if self.currentRcType == self.RCTYPE_AZBOXHD:
@@ -229,5 +232,7 @@ class RcModel:
 			return '/usr/share/enigma2/rc_models/vu3/'
 		elif self.currentRcType == self.RCTYPE_XP1000:
 			return '/usr/share/enigma2/rc_models/xp1000/'
+		elif self.currentRcType == self.RCTYPE_SPARK:
+			return '/usr/share/enigma2/rc_models/spark/'
 
 rc_model = RcModel()

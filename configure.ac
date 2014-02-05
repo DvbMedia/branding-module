@@ -219,6 +219,7 @@ BoxBranding/remotes/vu/Makefile
 BoxBranding/remotes/vu2/Makefile
 BoxBranding/remotes/vu3/Makefile
 BoxBranding/remotes/xp1000/Makefile
+BoxBranding/remotes/spark/Makefile
 
 
 ])
